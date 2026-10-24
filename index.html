@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS EC2 Web Server | Cloud Project</title>
+<style>
+:root{--navy:#10233f;--blue:#2563eb;--light:#eff6ff;--ink:#1f2937}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:var(--ink);line-height:1.65}
+.hero{background:linear-gradient(130deg,#10233f,#1d4ed8);color:#fff;padding:60px 22px}.wrap{max-width:980px;margin:auto}
+.kicker{text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;font-weight:700;opacity:.85}
+h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.12;margin:.35em 0}
+.hero p{max-width:720px;font-size:1.12rem}.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff50;border-radius:999px;padding:5px 12px;margin:5px 5px 0 0;font-size:.85rem}
+main{padding:28px 22px 54px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;border:1px solid #dbe3ee;border-radius:15px;padding:22px;box-shadow:0 5px 18px #0f172a0a}
+h2{color:var(--navy);font-size:1.22rem;margin-top:0}.notice{margin-top:20px;background:#fffbeb;border-left:4px solid #d97706;border-radius:8px;padding:16px}
+footer{padding:24px;text-align:center;color:#64748b;border-top:1px solid #e2e8f0;font-size:.9rem}
+</style></head>
+<body>
+<header class="hero"><div class="wrap"><div class="kicker">Cloud & DevOps · Beginner Project</div>
+<h1>AWS IAM & EC2<br>Web Server</h1>
+<p>A practical learning project covering AWS identity and access management, Linux compute, network access controls, and static website hosting with Apache HTTP Server.</p>
+<span class="tag">AWS IAM</span><span class="tag">Amazon EC2</span><span class="tag">Linux</span><span class="tag">Apache</span><span class="tag">HTML/CSS</span>
+</div></header>
+<main class="wrap">
+<div class="grid">
+<section class="card"><h2>01 · Identity & Access</h2><p>IAM users, groups, roles, and policies help control who can access AWS resources and which actions they can perform. Follow least privilege.</p></section>
+<section class="card"><h2>02 · Compute</h2><p>Amazon EC2 provides virtual servers. A Linux instance can run a web server and host static website files.</p></section>
+<section class="card"><h2>03 · Network Security</h2><p>Security Groups act as virtual firewalls. Allow only required traffic and restrict SSH to trusted IP addresses.</p></section>
+<section class="card"><h2>04 · Web Hosting</h2><p>Apache serves HTML content to visitors. The page should be tested from a browser after deployment.</p></section>
+</div>
+<section class="card" style="margin-top:18px"><h2>Deployment workflow</h2><ol><li>Review IAM concepts and least-privilege permissions.</li><li>Launch a Linux EC2 instance and protect the key pair.</li><li>Configure HTTP port 80 for the demo and restrict SSH port 22 to a trusted IP.</li><li>Install Apache and deploy this <code>index.html</code> file to its document root.</li><li>Verify the website in a browser and document genuine screenshots.</li><li>Stop or terminate resources that are no longer needed.</li></ol></section>
+<p class="notice"><strong>Project status:</strong> This is a prepared project package. The AWS instance and live website must be deployed and verified in the learner's AWS account before being described as live or completed.</p>
+</main><footer>Learning project · Never publish AWS credentials, access keys, passwords, or private key files.</footer>
+</body></html>
